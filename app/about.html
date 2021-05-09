@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body class="about">
+
+    <header class="header">
+        <div class="header__top-inner">
+            <div class="header__logo">
+                <a href="/index.html">IB</a>
+            </div>
+            <div class="button_container">
+                <div class="name_container">
+                    <span id="menu_name">ME<br>NU</span>
+                    <span id="open_name">OP<br>EN</span>
+                </div>
+                <span id="line_one"></span>
+                <span id="line_two"></span>
+            </div>
+            <div class="header__nav">
+                <ul>
+                    <li>
+                        <a href="/about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="/work.html">WORK</a>
+                    </li>
+                    <li>
+                        <a href="/blog.html">BLOG</a>
+                    </li>
+                    <li>
+                        <a data-fancybox data-src="#modal" href="javascript:;">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="about__inner">
+                <div class="about__title">
+                    Hi, I'm Ivan
+                </div>
+                <div class="about__text">
+                    Web Developer.
+                </div>
+            </div>
+
+            <body>
+                <div class="middle">
+                    <a class="btn" href="https://www.linkedin.com/in/ivan-bilchenko-6840671bb/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn" href="mailto:Bilchenko026@gmail.com"><i class="fab fa-google"></i></a>
+                    <a class="btn" href="https://www.instagram.com/hey_oo_1/"><i class="fab fa-instagram"></i></a>
+                </div>
+    </header>
+
+    <section class="info">
+        <div class="container">
+            <div class="info__title">
+                About me
+            </div>
+            <div class="info__box">
+                <div class="about__info-top">
+                    <div class="info__img">
+                        <img src="images/Ivan.jpg" alt="">
+                    </div>
+                    <div class="info__inner-text">
+                        I'm a self taught web developer from Ukraine. I'm currently learning Javascript and React. 
+                        I enjoy programming a lot, it’s the sphere with endless knowledge and I like finding out something new and interesting.
+                         I can't wait till I get to the point where I am able to put what I'm learning to a good use.
+                    </div>
+                </div>
+                <div class="info__inner">
+                    <div class="info__inner-title">
+                        Here's a few of the tools I use
+                    </div>
+                    <div class="info__inner-skills">
+                        <div class="info__skills-left">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div class="info__skills__right">
+                            <ul>
+                                <li>JQuery</li>
+                                <li>Sass</li>
+                                <li>Git</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn__container">
+                <a class="about-btn" href="/index.html">Go back</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="all">
+            <div class="signature">
+                Don't wait for oppoortunity. Create it!
+            </div>
+            <div class="year">
+                © 2021
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal">
+        <div class="contact__wrapper">
+            <div class="contact__title">
+                Contact me
+            </div>
+            <div class="contact__text">
+                I'd love to hear from you!
+            </div>
+            <form class="contact__form">
+                <input type="hidden" name="project_name" value="My Web CV">
+                <input type="hidden" name="admin_email" value="Bilchenko026@gmail.com">
+                <input type="hidden" name="form_subject" value="Form Subject">
+                <input type="text" name="user_name" placeholder="Name*" required>
+                <div class="contact__inner">
+                    <label class="contact__email">
+                        <input type="email" name="user_email" placeholder="Email*" required />
+                    </label>
+                    <label class="contact-input">
+                        <input type="text" name="user_phone" placeholder="Phone Number">
+                    </label>
+                </div>
+                <label class="contact__massage">
+                    <textarea placeholder="Message*" name="user_text" required></textarea>
+                </label>
+                <button class="contact__btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <span id="circle" class="circle"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

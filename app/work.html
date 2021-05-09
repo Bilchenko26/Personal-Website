@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Web CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body class="work">
+
+  <header class="header">
+    <div class="header__top-inner">
+      <div class="header__logo">
+        <a href="/index.html">IB</a>
+      </div>
+      <div class="button_container">
+        <div class="name_container">
+          <span id="menu_name">ME<br>NU</span>
+          <span id="open_name">OP<br>EN</span>
+        </div>
+        <span id="line_one"></span>
+        <span id="line_two"></span>
+      </div>
+      <div class="header__nav">
+        <ul>
+          <li>
+            <a href="/about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="/work.html">WORK</a>
+          </li>
+          <li>
+            <a href="/blog.html">BLOG</a>
+          </li>
+          <li>
+            <a data-fancybox data-src="#modal" href="javascript:;">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section id="welcome-section" class="welcome-section">
+      <img src="https://media.giphy.com/media/l0EoBBFIUg5t8kKw8/giphy.gif" alt=" " aria-hidden="true"
+        class="welcome-section__image">
+      <div class="welcome-section__info-container">
+        <h1 class="welcome-section__title">These are some <span class="welcome-section__name">of my projects</span></h1>
+        <a href="#work-scroll" id="scroll" onclick="slowScroll('#work-scroll')"
+          class="welcome-section__description">Lets Start</a>
+      </div>
+    </section>
+
+    <section id="work-scroll" class="work-section">
+      <div class="work-portfolio">
+        <div class="portfolio-item">
+          <div class="work-title">Web Portfolio <span>HTML/SCSS/JS/GULP</span></div>
+          <div id="one" class="portfolio-box"></div>
+          <div class="work-links">
+            <a href="" class="portfolio-git">View on GitHub</a>
+            <a href="/index.html" class="portfolio-link">View Live</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="work-title">Landing Page <span>HTML/SCSS/JS/JQuery</span></div>
+          <div id="two" class="portfolio-box"></div>
+          <div class="work-links">
+            <a href="/404.html" class="portfolio-git">View on GitHub</a>
+            <a href="/404.html" class="portfolio-link">View Live</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="work-title">React Weather <span>HTML/SCSS/JS/React/span></div>
+          <div id="three" class="portfolio-box"></div>
+          <div class="work-links">
+            <a href="/404.html" class="portfolio-git">View on GitHub</a>
+            <a href="/404.html" class="portfolio-link">View Live</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="work-title">Online Store <span>HTML/SCSS/JS/GULP</span></div>
+          <div id="four" class="portfolio-box"></div>
+          <div class="work-links">
+            <a href="/404.html" class="portfolio-git">View on GitHub</a>
+            <a href="/404.html" class="portfolio-link">View Live</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+
+      <img src="https://media.giphy.com/media/l0Ex8vujsc51SVuMM/giphy.gif" alt="" aria-hidden="true"
+        class="contact-section__image">
+
+      <header class="contact-section__header">
+        <h2 class="contact-section__title">Let's work <span class="contact-section__name">together...</span></h2>
+        <p class="contact-section__description">My name is Ivan and yours?</p>
+      </header>
+
+      <div class="contact-section__links">
+        <a href="https://www.linkedin.com/in/ivan-bilchenko-6840671bb/" target="_blank" class="contact-section__link"><i
+            class="fab fa-facebook-square"></i> LinkedIn</a>
+        <a id="profile-link" href="https://github.com/Bilchenko26" target="_blank" class="contact-section__link"><i
+            class="fab fa-github"></i> GitHub</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="all all-work">
+        <div class="signature signature-work">
+          Don't wait for oppoortunity. Create it!
+        </div>
+        <div class="year year-work">
+          © 2021
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal">
+      <div class="contact__wrapper">
+        <div class="contact__title">
+          Contact me
+        </div>
+        <div class="contact__text">
+          I'd love to hear from you!
+        </div>
+        <form class="contact__form">
+          <input type="hidden" name="project_name" value="My Web CV">
+          <input type="hidden" name="admin_email" value="Bilchenko026@gmail.com">
+          <input type="hidden" name="form_subject" value="Form Subject">
+          <input type="text" name="user_name" placeholder="Name*" required>
+          <div class="contact__inner">
+              <label class="contact__email">
+                  <input type="email" name="user_email" placeholder="Email*" required />
+              </label>
+              <label class="contact-input">
+                  <input type="text" name="user_phone" placeholder="Phone Number">
+              </label>
+          </div>
+          <label class="contact__massage">
+              <textarea placeholder="Message*" name="user_text" required></textarea>
+          </label>
+          <button class="contact__btn" type="submit">Send Message</button>
+      </form>
+      </div>
+    </div>
+    <span id="circle" class="circle"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
