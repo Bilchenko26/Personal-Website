@@ -86,7 +86,6 @@
   background-image: url(https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy.gif);
   background-size: cover;
   background-position: center center;
-  width: 100vw;
   margin-top: 22vh;
   font-size: 170px;
   line-height: 1;
@@ -167,6 +166,7 @@
   margin-left: 4px;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 80px;
   border: none;
   outline: none;
   cursor: pointer;
